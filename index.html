@@ -14,25 +14,12 @@
     <!-- Bootstrap core CSS -->
     <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    
 
     
     <!-- Custom styles for this template -->
     <link href="carousel.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
   </head>
   <body>
     
@@ -46,25 +33,16 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="https://srengin.github.io">Home</a>
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="projects.html">Projects</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
+            <a class="nav-link" href="projects.html">Repositories</a>
           </li>
         </ul>
-        <form class="d-flex">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
       </div>
     </div>
   </nav>
 </header>
-
-<main>
 
   <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-indicators">
@@ -77,10 +55,17 @@
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
         <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+          <div class="carousel-caption text-start grid-container">
+            <div class="grid-item"><h1>Susan R. Engin's Portfolio</h1>
+            <p>Biography: Susan is currently enrolled MIT's xPRO Professional Certificate in Coding: Full Stack Development with MERN 
+              with an estimated completion date of October 2022.
+            </p>
+            <p>While never previously employed in a tech industry. Susan has always been good at logic, puzzles, knows how to make a deadline
+              and is always willing to learn.
+            </p>
+            <p><a class="btn btn-lg btn-primary" href="mailto:susan.engin@gmail.com">Contact Susan</a></p>
+            </div>
+            <div><img src="biopic.jpg" alt="RequiredBioPic" width="250" class="grid-item"></div>
           </div>
         </div>
       </div>
@@ -88,10 +73,13 @@
         <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
 
         <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+          <div id="midCarousel" class="carousel-caption">
+            <h1>M: MongoDB</h1>
+            <h1>E: Express</h1>
+            <h1>R: React</h1>
+            <h1>N: Node</h1>
+            <h2>MERN Full Stack Developers can handle the front-end, back-end and database!</h2>
+            <p><a class="btn btn-lg btn-primary" href="https://www.mongodb.com/mern-stack">Learn more</a></p>
           </div>
         </div>
       </div>
@@ -100,9 +88,11 @@
 
         <div class="container">
           <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+            <h1>www.linkedin.com/in/SRENGIN</h1>
+            <h1>github.com/srengin</h1>
+            <h1>email: susan.engin@gmail.com</h1>
+            <p>Email is the best contact method.</p>
+            <p><a class="btn btn-lg btn-primary" href="projects.html">Browse Repositories</a></p>
           </div>
         </div>
       </div>
@@ -127,31 +117,31 @@
     <!-- Three columns of text below the carousel -->
     <div class="row">
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><image href="PacMan1.png" x="30" y="40" height="70px" width="70px"/></svg>
 
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2>Feeding PacMan</h2>
+        <p>Missing the stylings of CSS. This barebones version of PacMan has much of the same functionality as the original. Control PacMan's movement with the arrow keys and eat all of the pizza bouncing around to win.</p>
+        <p><a class="btn btn-secondary" href="https://srengin.github.io/FeedingPacMan">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><image href="oneeye.png" x="-50" y="-100" height="300px" width="300px"/></svg>
 
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2>Creepy Eyes</h2>
+        <p>Eleven eyes use dynamic scripting to independently follow the mouse around the page. The coding allows for an unlimited number.</p>
+        <p><a class="btn btn-secondary" href="https://srengin.github.io/CreepyEyes">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
       <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><image href="blue.png" x="20" y="30" height="100px" width="100px"/></svg>
 
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+        <h2>Real-time Bus Tracking</h2>
+        <p>This Real-Time tracking of Route 1 of the Massachusetts Bay Transportation Authority, will make sure you never miss the bus.</p>
+        <p><a class="btn btn-secondary" href="https://srengin.github.io/BusTracker">View details &raquo;</a></p>
       </div><!-- /.col-lg-4 -->
     </div><!-- /.row -->
 
 
     <!-- START THE FEATURETTES -->
-
+    <!-- Saved for Later
     <hr class="featurette-divider">
 
     <div class="row featurette">
@@ -192,16 +182,15 @@
     </div>
 
     <hr class="featurette-divider">
-
+    -->
     <!-- /END THE FEATURETTES -->
-
   </div><!-- /.container -->
 
 
   <!-- FOOTER -->
   <footer class="container">
     <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    <p>&copy; 2022 SRENGIN  &middot; <!--<a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>-->
   </footer>
 </main>
 
